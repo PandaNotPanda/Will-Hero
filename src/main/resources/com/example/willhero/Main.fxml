@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" blendMode="MULTIPLY" maxHeight="608.0" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="1201.0" styleClass="anchor" stylesheets="@herostyle.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.willhero.GameController">
+   <children>
+      <ImageView fitHeight="614.0" fitWidth="5799.0" layoutX="-6.0" layoutY="-6.0">
+         <image>
+            <Image url="@longsky.png" />
+         </image>
+      </ImageView>
+      <Group fx:id="objects" layoutX="852.0" layoutY="194.0">
+         <children>
+            <Group layoutX="152.0" layoutY="230.0" />
+         </children>
+      </Group>
+      <Label fx:id="scoreLabel" layoutX="1003.0" layoutY="5.0" />
+      <Rectangle fx:id="heroRect" arcHeight="5.0" arcWidth="5.0" height="47.0" layoutX="129.0" layoutY="402.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="56.0">
+         <fill>
+            <LinearGradient endX="0.17803032831712196" endY="1.0" startX="0.2992424097928134">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.14079999923706055" green="0.6399999856948853" blue="0.37376001477241516" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <Button fx:id="pauseButton" layoutX="1102.0" layoutY="28.0" mnemonicParsing="false" onMouseClicked="#pause" prefHeight="38.0" prefWidth="26.0" />
+      <Label fx:id="currScore" layoutX="960.0" layoutY="23.0" text="0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Rectangle fx:id="island1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="73.0" layoutX="21.0" layoutY="458.0" stroke="BLACK" strokeType="INSIDE" width="329.0" />
+      <Rectangle fx:id="island2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="141.0" layoutX="391.0" layoutY="421.0" stroke="BLACK" strokeType="INSIDE" width="345.0" />
+      <Label fx:id="highScore" layoutX="306.0" layoutY="29.0" prefHeight="36.0" prefWidth="47.0" text="14">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Button fx:id="dashButton" layoutX="59.0" layoutY="75.0" mnemonicParsing="false" onMouseClicked="#dash" prefHeight="80.0" prefWidth="133.0" />
+      <Rectangle fx:id="island3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="73.0" layoutX="864.0" layoutY="479.0" stroke="BLACK" strokeType="INSIDE" width="234.0" />
+      <Rectangle fx:id="island4" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="73.0" layoutX="1146.0" layoutY="494.0" stroke="BLACK" strokeType="INSIDE" width="329.0" />
+      <Rectangle fx:id="orcRect" arcHeight="5.0" arcWidth="5.0" fill="RED" height="47.0" layoutX="1017.0" layoutY="420.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+      <Rectangle fx:id="island5" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="118.0" layoutX="1575.0" layoutY="453.0" stroke="BLACK" strokeType="INSIDE" width="274.0" />
+      <Rectangle fx:id="island6" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="73.0" layoutX="2030.0" layoutY="484.0" stroke="BLACK" strokeType="INSIDE" width="329.0" />
+      <Rectangle fx:id="island7" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="73.0" layoutX="2400.0" layoutY="478.0" stroke="BLACK" strokeType="INSIDE" width="329.0" />
+      <Rectangle fx:id="island8" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="73.0" layoutX="2853.0" layoutY="437.0" stroke="BLACK" strokeType="INSIDE" width="329.0" />
+      <Rectangle fx:id="island9" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="217.0" layoutX="3378.0" layoutY="376.0" stroke="BLACK" strokeType="INSIDE" width="1017.0" />
+      <Rectangle fx:id="coin1" arcHeight="5.0" arcWidth="5.0" fill="#ebfa24" height="19.0" layoutX="416.0" layoutY="391.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="coin2" arcHeight="5.0" arcWidth="5.0" fill="#ebfa24" height="19.0" layoutX="451.0" layoutY="392.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="coin3" arcHeight="5.0" arcWidth="5.0" fill="#ebfa24" height="19.0" layoutX="490.0" layoutY="393.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="coin4" arcHeight="5.0" arcWidth="5.0" fill="#ebfa24" height="19.0" layoutX="525.0" layoutY="393.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="coin5" arcHeight="5.0" arcWidth="5.0" fill="#ebfa24" height="19.0" layoutX="560.0" layoutY="393.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="coin6" arcHeight="5.0" arcWidth="5.0" fill="#ebfa24" height="19.0" layoutX="590.0" layoutY="393.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="coin7" arcHeight="5.0" arcWidth="5.0" fill="#ebfa24" height="19.0" layoutX="624.0" layoutY="392.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="coin8" arcHeight="5.0" arcWidth="5.0" fill="#ebfa24" height="19.0" layoutX="664.0" layoutY="393.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="coin9" arcHeight="5.0" arcWidth="5.0" fill="#ebfa24" height="19.0" layoutX="1166.0" layoutY="462.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="coin10" arcHeight="5.0" arcWidth="5.0" fill="#ebfa24" height="19.0" layoutX="1201.0" layoutY="463.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="coin11" arcHeight="5.0" arcWidth="5.0" fill="#d7e419" height="19.0" layoutX="1240.0" layoutY="464.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="coin12" arcHeight="5.0" arcWidth="5.0" fill="#d7e419" height="19.0" layoutX="1275.0" layoutY="464.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="coin13" arcHeight="5.0" arcWidth="5.0" fill="#d7e419" height="19.0" layoutX="1310.0" layoutY="464.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="coin14" arcHeight="5.0" arcWidth="5.0" fill="#d7e419" height="19.0" layoutX="2245.0" layoutY="442.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="coin15" arcHeight="5.0" arcWidth="5.0" fill="#d7e419" height="19.0" layoutX="2280.0" layoutY="442.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="coin16" arcHeight="5.0" arcWidth="5.0" fill="#d7e419" height="19.0" layoutX="2315.0" layoutY="442.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="coin17" arcHeight="5.0" arcWidth="5.0" fill="#d7e419" height="19.0" layoutX="2984.0" layoutY="350.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="coin18" arcHeight="5.0" arcWidth="5.0" fill="#d7e419" height="19.0" layoutX="3019.0" layoutY="351.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="coin19" arcHeight="5.0" arcWidth="5.0" fill="#d7e419" height="19.0" layoutX="3058.0" layoutY="352.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="coin20" arcHeight="5.0" arcWidth="5.0" fill="#d7e419" height="19.0" layoutX="3093.0" layoutY="352.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="coin21" arcHeight="5.0" arcWidth="5.0" fill="#d7e419" height="19.0" layoutX="3128.0" layoutY="352.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+      <Rectangle fx:id="deathRect" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="1.0" layoutX="35.0" layoutY="606.0" stroke="BLACK" strokeType="INSIDE" width="4625.0" />
+      <Rectangle fx:id="boss" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="136.0" layoutX="3490.0" layoutY="134.0" stroke="BLACK" strokeType="INSIDE" width="153.0" />
+      <Label fx:id="currCoinsCount" layoutX="960.0" layoutY="84.0" text="0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Rectangle fx:id="scoreimg" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="85.0" layoutX="641.0" layoutY="-2.0" scaleX="0.3" scaleY="0.3" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="390.0" />
+      <Rectangle fx:id="highscoreimg" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="85.0" layoutX="-169.0" layoutY="4.0" scaleX="0.3" scaleY="0.3" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="652.0" />
+      <Rectangle fx:id="coinsimg" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="85.0" layoutX="663.0" layoutY="60.0" scaleX="0.3" scaleY="0.3" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="347.0" />
+      <Rectangle fx:id="orc6" arcHeight="5.0" arcWidth="5.0" fill="RED" height="47.0" layoutX="2564.0" layoutY="429.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+      <Rectangle fx:id="orc5" arcHeight="5.0" arcWidth="5.0" fill="RED" height="47.0" layoutX="2166.0" layoutY="437.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+      <Rectangle fx:id="orc3" arcHeight="5.0" arcWidth="5.0" fill="RED" height="47.0" layoutX="1702.0" layoutY="405.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+      <Rectangle fx:id="orc4" arcHeight="5.0" arcWidth="5.0" fill="RED" height="47.0" layoutX="1778.0" layoutY="405.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+      <Rectangle fx:id="orc2" arcHeight="5.0" arcWidth="5.0" fill="RED" height="47.0" layoutX="1384.0" layoutY="444.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+      <Rectangle fx:id="coinChestClosed" arcHeight="5.0" arcWidth="5.0" fill="#f61fff" height="153.0" layoutX="1519.0" layoutY="363.0" scaleX="0.2" scaleY="0.2" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="216.0" />
+      <Rectangle fx:id="orc1" arcHeight="5.0" arcWidth="5.0" fill="RED" height="47.0" layoutX="946.0" layoutY="428.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+      <Rectangle fx:id="orc7" arcHeight="5.0" arcWidth="5.0" fill="RED" height="47.0" layoutX="3011.0" layoutY="389.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+      <Rectangle fx:id="weaponChestClosed" arcHeight="5.0" arcWidth="5.0" fill="#f61fff" height="153.0" layoutX="2364.0" layoutY="388.0" scaleX="0.2" scaleY="0.2" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="216.0" />
+      <Rectangle fx:id="orc8" arcHeight="5.0" arcWidth="5.0" fill="RED" height="47.0" layoutX="3093.0" layoutY="389.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+      <Rectangle fx:id="weaponChestOpen" arcHeight="5.0" arcWidth="5.0" fill="#f61fff" height="164.0" layoutX="2324.0" layoutY="575.0" scaleX="0.2" scaleY="0.2" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="253.0" />
+      <Rectangle fx:id="coinChestOpen" arcHeight="5.0" arcWidth="5.0" fill="#f61fff" height="164.0" layoutX="1479.0" layoutY="559.0" scaleX="0.2" scaleY="0.2" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="253.0" />
+      <Rectangle fx:id="donut" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="58.0" layoutX="4168.0" layoutY="301.0" stroke="BLACK" strokeType="INSIDE" width="71.0" />
+   </children>
+</AnchorPane>

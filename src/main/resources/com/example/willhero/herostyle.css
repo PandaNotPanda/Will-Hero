@@ -1,0 +1,125 @@
+.button{
+    -fx-background-color: #ffffff00;
+}
+
+/*.anchor{*/
+/*    -fx-background-image:url('longsky.png');*/
+/*}*/
+
+.label{
+    -fx-font : 25px "serief";
+    -fx-font-weight: bold;
+}
+
+#exit{
+    -fx-background-image: url('exit.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 50px;
+}
+
+#newGameButton{
+    -fx-background-image: url('ng.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 175px;
+}
+
+#ldgameButton{
+    -fx-background-image: url('ldgame.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 180px;
+}
+
+#resButton{
+    -fx-background-image: url('resume.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 180px;
+}
+
+#saveButton{
+    -fx-background-image: url('save.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 180px;
+}
+
+#restartButton{
+    -fx-background-image: url('restart.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 180px;
+}
+
+#pauseButton{
+    -fx-background-image: url('pause.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 25px;
+}
+
+#pauseBox{
+    -fx-background-image: url('pauseBG.png');
+    -fx-background-repeat: stretch;
+    -fx-background-size: 700px;
+    -fx-background-position: center center;
+}
+
+#load1{
+    -fx-background-image: url('load1.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 200px;
+}
+
+#load2{
+    -fx-background-image: url('load2.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 200px;
+}
+
+#load3{
+    -fx-background-image: url('load3.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 200px;
+}
+
+#back{
+    -fx-background-image: url('back.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100px;
+}
+
+#save1{
+    -fx-background-image: url('save1.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 200px;
+}
+
+#save2{
+    -fx-background-image: url('save2.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 200px;
+}
+
+#save3{
+    -fx-background-image: url('save3.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 200px;
+}
+
+#saveAnchor{
+    -fx-background-image:url('blurrysky.png')
+}
+
+#backFromRevive{
+    -fx-background-image: url('home.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100px;
+}
+
+#reviveButton{
+    -fx-background-image: url('reviveP.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 250px;
+}
+
+#dashButton{
+    -fx-background-image: url('go.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 150px;
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane fx:id="anchorpane" maxHeight="603" maxWidth="1201" minHeight="-Infinity" minWidth="-Infinity" prefHeight="603.0" prefWidth="1201.0" styleClass="anchor" stylesheets="@herostyle.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.willhero.GameController">
+    <children>
+      <ImageView fitHeight="610.0" fitWidth="1214.0" layoutX="-5.0">
+         <image>
+            <Image url="@sky.png" />
+         </image>
+      </ImageView>
+        <ImageView fitHeight="155.0" fitWidth="356.0" layoutX="808.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@island.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="helmet1" fitHeight="261.0" fitWidth="389.0" layoutX="371.0" layoutY="431.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@longisland.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="title" fitHeight="195.0" fitWidth="610.0" layoutX="331.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@text.png" />
+            </image>
+        </ImageView>
+        <Group fx:id="objects" layoutX="852.0" layoutY="194.0" />
+      <Rectangle fx:id="heroRect" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="47.0" layoutX="142.0" layoutY="404.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="56.0" />
+        <Group fx:id="coins" layoutX="398.0" layoutY="387.0">
+            <children>
+                <ImageView fitHeight="20.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@coin.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="20.0" fitWidth="45.0" layoutX="37.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@coin.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="20.0" fitWidth="45.0" layoutX="75.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@coin.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="20.0" fitWidth="45.0" layoutX="118.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@coin.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="20.0" fitWidth="45.0" layoutX="156.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@coin.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="20.0" fitWidth="45.0" layoutX="191.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@coin.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="20.0" fitWidth="45.0" layoutX="229.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@coin.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="20.0" fitWidth="45.0" layoutX="267.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@coin.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Group>
+        <Button fx:id="newGameButton" layoutX="547.0" layoutY="173.0" mnemonicParsing="false" onMouseClicked="#newGame" prefHeight="28.0" prefWidth="178.0" stylesheets="@herostyle.css" />
+        <Button fx:id="ldgameButton" layoutX="547.0" layoutY="212.0" mnemonicParsing="false" onMouseClicked="#loadGame" prefHeight="28.0" prefWidth="178.0" stylesheets="@herostyle.css" />
+      <Rectangle fx:id="island1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="73.0" layoutX="70.0" layoutY="452.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <ImageView fitHeight="93.0" fitWidth="56.0" layoutX="198.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@helmet.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="117.0" layoutY="449.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@island.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
